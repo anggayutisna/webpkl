@@ -88,7 +88,7 @@
     <!-- ##### Hero Area Start ##### -->
     <div class="hero-area owl-carousel">
         <!-- Single Blog Post -->
-        <div class="hero-blog-post bg-img bg-overlay" style="background-image: url(frontend/mag/img/bg-img/1.jpg);">
+        <div class="hero-blog-post bg-img bg-overlay" style="background-image: url(frontend/mag/img/bali.jpg);">
             <div class="container h-100">
                 <div class="row h-100 align-items-center">
                     <div class="col-12">
@@ -174,7 +174,7 @@
                         <img src="{{ asset('assets/img/artikel/'.$artikels->foto)}}" alt="">
                     </div>
                     <div class="post-content">
-                        <a href="single-post.html" class="post-title">{{ $artikels->judul }}</a>
+                        <a href="{{ route('blogall.blog', $artikels->slug) }}" class="post-title">{{ $artikels->judul }}</a>
 
                     </div>
                 </div>
