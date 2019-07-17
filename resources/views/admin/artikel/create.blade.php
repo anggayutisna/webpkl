@@ -1,17 +1,18 @@
 @extends('layouts.backend')
 @section('css')
 <link rel="stylesheet" href="{{ asset('css/select2.min.css') }}">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css" rel="stylesheet" />
 @endsection
 
 @section('js')
-    <script src="{{ asset('js/select2.min.js')}}"></script>
-    <script src="{{ asset('backend/assest/js/components/select2-init.js')}}"></script>
+    <script src="{{ asset('backend/assets/vendor/select2/select2.min.js') }}"></script>
+    <script src="{{ asset('backend/assets/js/components/select2-init.js')}}"></script>
     <script src="{{ asset('backend/assets/vendor/ckeditor/ckeditor.js')}}"></script>
 <script>
     CKEDITOR.replace('editorl');
 
     $(document).ready(function () {
-        $('#select2').select2();
+        $('#select2').select2({});
     })
 </script>
 @endsection
@@ -40,7 +41,7 @@
     </div>
     <div class="form-group">
         <label for="">Tag</label>
-        <select name="tag[]" id="select2" class="form-control multiple" multiple>
+        <select name="tag[]" id="select2" class="form-control" multiple>
     @foreach($tag as $data)
         <option value="{{ $data->id }}">
             {{ $data->nama_tag }}

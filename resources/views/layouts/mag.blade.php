@@ -9,10 +9,10 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>Mag - Video &amp; Magazine HTML Template</title>
+    <title>PariwisataIndo</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="frontend/mag/img/core-img/favicon.ico">
+    <link rel="icon" href="frontend/mag/img/logoind.png">
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="frontend/mag/style.css">
@@ -38,7 +38,7 @@
                 <nav class="classy-navbar justify-content-between" id="magNav">
 
                     <!-- Nav brand -->
-                    <a href="index.html" class="nav-brand"><img src="frontend/mag/img/core-img/logo.png" alt=""></a>
+                    <a href="index.html" class="nav-brand"><img src="frontend/mag/img/logoind.png" width="100px" height="100px" alt=""></a>
 
                     <!-- Navbar Toggler -->
                     <div class="classy-navbar-toggler">
@@ -58,7 +58,7 @@
                             <div class="classynav">
                                 <ul>
                                     <li class="active"><a href="{{ url('/') }}">Home</a></li>
-                                    <li><a href="{{ url('blogpariwisata') }}">Archive</a></li>
+                                    <li><a href="{{ url('blogpariwisata') }}">Semua Blog</a></li>
                                     <li><a href="{{ url('about') }}">About</a></li>
                                     <li><a href="{{ url('contact') }}">Contact</a></li>
                                 </ul>
@@ -97,7 +97,7 @@
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="footer-widget">
                         <!-- Logo -->
-                        <a href="index.html" class="foo-logo"><img src="frontend/mag/img/core-img/logo2.png" alt=""></a>
+                        <a href="index.html" class="foo-logo"><img src="frontend/mag/img/logoind    .png" alt=""></a>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <div class="footer-social-info">
                             <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
@@ -141,11 +141,7 @@
                             </div>
                             <div class="post-content">
                                 <a href="single-post.html" class="post-title">Take A Romantic Break In A Boutique Hotel</a>
-                                <div class="post-meta d-flex justify-content-between">
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</a>
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                                </div>
+
                             </div>
                         </div>
                         <!-- Single Blog Post -->
@@ -155,11 +151,7 @@
                             </div>
                             <div class="post-content">
                                 <a href="single-post.html" class="post-title">Travel Prudently Luggage And Carry On</a>
-                                <div class="post-meta d-flex justify-content-between">
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</a>
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                                </div>
+
                             </div>
                         </div>
                     </div>

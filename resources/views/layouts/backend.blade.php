@@ -2,12 +2,12 @@
 <html lang="en">
 
 
-<!-- Mirrored from www.authenticgoods.co/themes/quantum-pro/demos/demo4/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 05 Jan 2019 02:57:53 GMT -->
+<!-- Mirrored from www.authenticgoods.co/themes/quantum-pro/demos/demo4/index.html by HTTrack Website Copier/3.x [XR&CO2014], Sat, 05 Jan 2019 02:57:53 GMT -->
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>QuantumPro | Dashboard</title>
+	<title>Admin</title>
 	<!-- ================== GOOGLE FONTS ==================-->
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500" rel="stylesheet">
 	<!-- ======================= GLOBAL VENDOR STYLES ========================-->

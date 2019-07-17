@@ -52,28 +52,28 @@ class ArtikelController extends Controller
         //     'kategori_id' => 'required',
         //     'tag_id' => 'required']);
 
-            $artikel = new Artikel;
-            $artikel->judul = $request->judul;
-            $artikel->slug = str_slug($request->judul);
-            $artikel->konten = $request->konten;
-            $artikel->user_id = Auth::user()->id;
-            $artikel->kategori_id = $request->kategori;
+        $artikel = new Artikel;
+        $artikel->judul = $request->judul;
+        $artikel->slug = str_slug($request->judul);
+        $artikel->konten = $request->konten;
+        $artikel->user_id = Auth::user()->id;
+        $artikel->kategori_id = $request->kategori;
 
-            if ($request->hasFile('foto'))  {
-                $file = $request->file('foto');
-                $destinationPath = public_path() . '/assets/img/artikel/';
-                $filename = str_random(6) . '_' . $file->getClientOriginalName();
-                $uploadSuccess = $file->move($destinationPath, $filename);
-                $artikel->foto = $filename;
-            }
+        if ($request->hasFile('foto')) {
+            $file = $request->file('foto');
+            $destinationPath = public_path() . '/assets/img/artikel/';
+            $filename = str_random(6) . '_' . $file->getClientOriginalName();
+            $uploadSuccess = $file->move($destinationPath, $filename);
+            $artikel->foto = $filename;
+        }
 
-            $artikel->save();
-            $artikel->tag()->attach($request->tag);
-            Session::flash("flash_notification", [
-                "level" => "success",
-                "message" => "Berhasil menyimpan data artikel berjudul <b>$artikel->judul</b>!"
-                ]);
-            return redirect()->route('artikel.index');
+        $artikel->save();
+        $artikel->tag()->attach($request->tag);
+        Session::flash("flash_notification", [
+            "level" => "success",
+            "message" => "Berhasil menyimpan data artikel berjudul <b>$artikel->judul</b>!"
+        ]);
+        return redirect()->route('artikel.index');
     }
 
     /**
@@ -88,7 +88,7 @@ class ArtikelController extends Controller
         $tag = Tag::all();
         $kategori = Kategori::all();
         $selected = $artikel->tag->pluck('id')->toArray();
-        return view('admin.artikel.show',compact('artikel', 'selected', 'tag', 'kategori'));
+        return view('admin.artikel.show', compact('artikel', 'selected', 'tag', 'kategori'));
     }
 
     /**
@@ -103,7 +103,7 @@ class ArtikelController extends Controller
         $kategori = Kategori::all();
         $tag = tag::all();
         $selected = $artikel->tag->pluck('id')->toArray();
-        return view ('admin.artikel.edit', compact('artikel', 'selected', 'kategori', 'tag'));
+        return view('admin.artikel.edit', compact('artikel', 'selected', 'kategori', 'tag'));
     }
 
     /**
@@ -122,27 +122,25 @@ class ArtikelController extends Controller
         //     'kategori_id' => 'required',
         //     'tag_id' => 'required']);
 
-            $artikel = Artikel::findOrFail($id);
-            $artikel->judul = $request->judul;
-            $artikel->slug = str_slug($request->judul);
-            $artikel->konten = $request->konten;
-            $artikel->user_id = Auth::user()->id;
-            $artikel->kategori_id = $request->kategori_id;
+        $artikel = Artikel::findOrFail($id);
+        $artikel->judul = $request->judul;
+        $artikel->slug = str_slug($request->judul);
+        $artikel->konten = $request->konten;
+        $artikel->user_id = Auth::user()->id;
+        $artikel->kategori_id = $request->kategori_id;
 
-            if ($request->hasFile('foto'))  {
-                $file = $request->file('foto');
-                $destinationPath = public_path() . '/assets/img/artikel/';
-                $filename = str_random(6) . '_' . $file->getClientOriginalName();
-                $uploadSuccess = $file->move($destinationPath, $filename);
+        if ($request->hasFile('foto')) {
+            $file = $request->file('foto');
+            $destinationPath = public_path() . '/assets/img/artikel/';
+            $filename = str_random(6) . '_' . $file->getClientOriginalName();
+            $uploadSuccess = $file->move($destinationPath, $filename);
 
-                if ($artikel->foto) {
-                    $old_foto = $artikel->foto;
-                    $filepath = public_path() . '/assets/img/' . $artikel->foto;
+            if ($artikel->foto) {
+                $old_foto = $artikel->foto;
+                $filepath = public_path() . '/assets/img/' . $artikel->foto;
                 try {
                     File::delete($filepath);
-                } catch (FileNotFoundException $e) {
-
-                }
+                } catch (FileNotFoundException $e) { }
 
                 $artikel->foto = $filename;
             }
@@ -152,9 +150,9 @@ class ArtikelController extends Controller
             Session::flash("flash_notification", [
                 "level" => "primary",
                 "message" => "Berhasil mengubah data artikel berjudul <b>$artikel->judul</b>!"
-                ]);
+            ]);
             return redirect()->route('artikel.index');
-            }
+        }
     }
 
     /**
@@ -171,9 +169,7 @@ class ArtikelController extends Controller
             $filepath = public_path() . '/assets/img/artikel/' . $artikel->foto;
             try {
                 File::delete($filepath);
-            } catch (FileNotFoundException $e) {
-
-            }
+            } catch (FileNotFoundException $e) { }
         }
 
         $artikel->tag()->detach($artikel->id);
@@ -181,7 +177,7 @@ class ArtikelController extends Controller
         Session::flash("flash_notification", [
             "level" => "danger",
             "message" => "Berhasil menghapus data artikel berjudul <b>$artikel->judul</b>!"
-            ]);
+        ]);
         return redirect()->route('artikel.index');
     }
 }

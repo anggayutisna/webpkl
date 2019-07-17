@@ -7,7 +7,7 @@
             <div class="row h-100 align-items-center">
                 <div class="col-12">
                     <div class="breadcrumb-content">
-                        <h2>Travel</h2>
+                        <h2>Semua Blog</h2>
                     </div>
                 </div>
             </div>
@@ -23,8 +23,8 @@
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
-                            <li class="breadcrumb-item"><a href="#">Feature</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Archive by Category “TRAVEL”</li>
+                            <li class="breadcrumb-item"><a href="#">Semua blog</a></li>
+
                         </ol>
                     </nav>
                 </div>
@@ -52,30 +52,18 @@
                             <!-- Post Contetnt -->
                             <div class="post-content">
                                 <div class="post-meta">
-                                    <a href="#">{{  date('l, d-m-Y')}}  </a>
+                                    <a> {{  date('l, d-m-Y')}}  </a>
                                     <a href="archive.html">{{ $artikels->kategori->nama_kategori}}</a>
                                 </div>
                                 <a href="{{ route('blogall.blog', $artikels->slug) }}" class="post-title">{{ $artikels->judul }}</a>
                                 <!-- Post Meta -->
-                                <div class="post-meta-2">
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 1034</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 834</a>
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 234</a>
-                                </div>
+
                                 <p>{!!$artikels->konten!!}</p>
                             </div>
                         </div>
 
                           @endforeach
                         <!-- Pagination -->
-                        <nav>
-                            <ul class="pagination">
-                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item"><a class="page-link" href="#"><i class="ti-angle-right"></i></a></li>
-                            </ul>
-                        </nav>
 
                     </div>
                 </div>
@@ -87,34 +75,13 @@
                             <!-- Social Followers Info -->
                             <div class="social-followers-info">
                                 <!-- Facebook -->
-                                <a href="#" class="facebook-fans"><i class="fa fa-facebook"></i> 4,360 <span>Fans</span></a>
+                                <a href="#" class="facebook-fans"><i class="fa fa-facebook"></i><span>Facebook</span></a>
                                 <!-- Twitter -->
-                                <a href="#" class="twitter-followers"><i class="fa fa-twitter"></i> 3,280 <span>Followers</span></a>
-                                <!-- YouTube -->
-                                <a href="#" class="youtube-subscribers"><i class="fa fa-youtube"></i> 1250 <span>Subscribers</span></a>
-                                <!-- Google -->
-                                <a href="#" class="google-followers"><i class="fa fa-google-plus"></i> 4,230 <span>Followers</span></a>
                             </div>
                         </div>
 
                         <!-- Sidebar Widget -->
-                        <div class="single-sidebar-widget p-30">
-                            <!-- Section Title -->
-                            <div class="section-heading">
-                                <h5>Categories</h5>
-                            </div>
 
-                            <!-- Catagory Widget -->
-                            <ul class="catagory-widgets">
-                                <li><a href="#"><span><i class="fa fa-angle-double-right" aria-hidden="true"></i> Life Style</span> <span>35</span></a></li>
-                                <li><a href="#"><span><i class="fa fa-angle-double-right" aria-hidden="true"></i> Travel</span> <span>30</span></a></li>
-                                <li><a href="#"><span><i class="fa fa-angle-double-right" aria-hidden="true"></i> Foods</span> <span>13</span></a></li>
-                                <li><a href="#"><span><i class="fa fa-angle-double-right" aria-hidden="true"></i> Game</span> <span>06</span></a></li>
-                                <li><a href="#"><span><i class="fa fa-angle-double-right" aria-hidden="true"></i> Sports</span> <span>28</span></a></li>
-                                <li><a href="#"><span><i class="fa fa-angle-double-right" aria-hidden="true"></i> Football</span> <span>08</span></a></li>
-                                <li><a href="#"><span><i class="fa fa-angle-double-right" aria-hidden="true"></i> TV Show</span> <span>13</span></a></li>
-                            </ul>
-                        </div>
 
                         <!-- Sidebar Widget -->
                         <div class="single-sidebar-widget">
@@ -124,81 +91,14 @@
                         <!-- Sidebar Widget -->
                         <div class="single-sidebar-widget p-30">
                             <!-- Section Title -->
-                            <div class="section-heading">
-                                <h5>Hot Channels</h5>
-                            </div>
 
-                            <!-- Single YouTube Channel -->
-                            <div class="single-youtube-channel d-flex">
-                                <div class="youtube-channel-thumbnail">
-                                    <img src="frontend/mag/img/bg-img/14.jpg" alt="">
-                                </div>
-                                <div class="youtube-channel-content">
-                                    <a href="single-post.html" class="channel-title">TV Show</a>
-                                    <a href="#" class="btn subscribe-btn"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Subscribe</a>
-                                </div>
-                            </div>
-
-                            <!-- Single YouTube Channel -->
-                            <div class="single-youtube-channel d-flex">
-                                <div class="youtube-channel-thumbnail">
-                                    <img src="frontend/mag/img/bg-img/15.jpg" alt="">
-                                </div>
-                                <div class="youtube-channel-content">
-                                    <a href="single-post.html" class="channel-title">Game Channel</a>
-                                    <a href="#" class="btn subscribe-btn"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Subscribe</a>
-                                </div>
-                            </div>
-
-                            <!-- Single YouTube Channel -->
-                            <div class="single-youtube-channel d-flex">
-                                <div class="youtube-channel-thumbnail">
-                                    <img src="frontend/mag/img/bg-img/16.jpg" alt="">
-                                </div>
-                                <div class="youtube-channel-content">
-                                    <a href="single-post.html" class="channel-title">Sport Channel</a>
-                                    <a href="#" class="btn subscribe-btn"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Subscribe</a>
-                                </div>
-                            </div>
-
-                            <!-- Single YouTube Channel -->
-                            <div class="single-youtube-channel d-flex">
-                                <div class="youtube-channel-thumbnail">
-                                    <img src="frontend/mag/img/bg-img/17.jpg" alt="">
-                                </div>
-                                <div class="youtube-channel-content">
-                                    <a href="single-post.html" class="channel-title">Travel Channel</a>
-                                    <a href="#" class="btn subscribe-btn"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Subscribe</a>
-                                </div>
-                            </div>
-
-                            <!-- Single YouTube Channel -->
-                            <div class="single-youtube-channel d-flex">
-                                <div class="youtube-channel-thumbnail">
-                                    <img src="frontend/mag/img/bg-img/18.jpg" alt="">
-                                </div>
-                                <div class="youtube-channel-content">
-                                    <a href="single-post.html" class="channel-title">LifeStyle Channel</a>
-                                    <a href="#" class="btn subscribe-btn"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Subscribe</a>
-                                </div>
-                            </div>
 
                         </div>
 
                         <!-- Sidebar Widget -->
                         <div class="single-sidebar-widget p-30">
                             <!-- Section Title -->
-                            <div class="section-heading">
-                                <h5>Newsletter</h5>
-                            </div>
 
-                            <div class="newsletter-form">
-                                <p>Subscribe our newsletter gor get notification about new updates, information discount, etc.</p>
-                                <form action="#" method="get">
-                                    <input type="search" name="widget-search" placeholder="Enter your email">
-                                    <button type="submit" class="btn mag-btn w-100">Subscribe</button>
-                                </form>
-                            </div>
 
                         </div>
                     </div>

@@ -30,6 +30,7 @@ class FrontendController extends Controller
 
     public function blogall(Artikel $artikel)
     {
+        $artikel = Artikel::where('slug', $artikel->slug)->get();
         return view('frontend.mag.single', compact('artikel'));
     }
 
@@ -42,6 +43,6 @@ class FrontendController extends Controller
     public function blogtag(Tag $tag)
     {
         $artikel = $tag->artikel()->latest()->paginate(5);
-        return view('frontend.mag.index', compact('artikel', 'cat'));
+        return view('frontend.mag.index', compact('artikel', 'tag'));
     }
 }
