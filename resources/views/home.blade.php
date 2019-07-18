@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.backend')
 
 @section('content')
 <div class="container">
@@ -14,8 +14,7 @@
                         </div>
                     @endif
 
-                    You are logged in!
-                     <a href="{{ url('admin/artikel') }}">go to admin operator</a>
+                    Hai {{ Auth::user()->name }}
                 </div>
             </div>
         </div>

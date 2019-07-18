@@ -1,3 +1,6 @@
+@extends('layouts.backend')
+@section('content')
+
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
@@ -65,8 +68,8 @@
     </head>
     <body>
         <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
+            <div class="content">
+                 @if (Route::has('login'))
                     @auth
                         <a href="{{ url('admin') }}">Home</a>
                     @else
@@ -76,10 +79,8 @@
                             <a href="{{ route('register') }}">Register</a>
                         @endif
                     @endauth
-                </div>
-            @endif
 
-            <div class="content">
+            @endif
                 <div class="title m-b-md">
                     Project
                 </div>
@@ -93,3 +94,4 @@
         </div>
     </body>
 </html>
+@endsection

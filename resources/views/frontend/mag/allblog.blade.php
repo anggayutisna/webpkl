@@ -58,7 +58,7 @@
                                 <a href="{{ route('blogall.blog', $artikels->slug) }}" class="post-title">{{ $artikels->judul }}</a>
                                 <!-- Post Meta -->
 
-                                <p>{!!$artikels->konten!!}</p>
+                                <p>  {!! substr($artikels->konten, 0, 200) !!}</p>
                             </div>
                         </div>
 
