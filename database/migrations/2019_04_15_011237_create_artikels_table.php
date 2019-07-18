@@ -18,6 +18,7 @@ class CreateArtikelsTable extends Migration
             $table->string('judul');
             $table->string('slug');
             $table->text('konten');
+            $table->text('map');
             $table->string('foto');
             $table->unsignedBigInteger('kategori_id');
             $table->foreign('kategori_id')->references('id')->on('kategoris')->onDelete('CASCADE');

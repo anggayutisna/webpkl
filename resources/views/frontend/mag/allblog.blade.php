@@ -45,9 +45,7 @@
                         <!-- Single Catagory Post -->
                         <div class="single-catagory-post d-flex flex-wrap">
                             <!-- Thumbnail -->
-                            <img src="{{ asset('assets/img/artikel/'.$artikels->foto)}}" alt="" width="250px"d >
-
-
+                            <img src="{{ asset('assets/img/artikel/'.$artikels->foto)}}" alt="" width="250px">
 
                             <!-- Post Contetnt -->
                             <div class="post-content">
@@ -58,7 +56,7 @@
                                 <a href="{{ route('blogall.blog', $artikels->slug) }}" class="post-title">{{ $artikels->judul }}</a>
                                 <!-- Post Meta -->
 
-                                <p>  {!! substr($artikels->konten, 0, 200) !!}</p>
+                                <p>  {!! substr($artikels->konten, 0,200) !!}</p>
                             </div>
                         </div>
 

@@ -34,6 +34,10 @@
                         <label>Konten</label>
                         <textarea id="editorl" rows="8" cols="30" type="text" name="konten">{{ $artikel->konten }}</textarea>
                     </div>
+                      <div class="form-group">
+                        <label for="">Map</label>
+                        <input class="form-control" value="{{ $artikel->map }}" type="text" name="map">
+                    </div>
                     <div class="form-group">
                         <label for="">Foto</label><br>
                         <img src="{{ asset('assets/img/artikel/'.$artikel->foto) }}" alt="" height="250px" width="250px">

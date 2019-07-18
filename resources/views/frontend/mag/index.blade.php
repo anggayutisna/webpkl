@@ -211,17 +211,21 @@
                 <div class="trending-post-slides owl-carousel">
                     <!-- Single Trending Post -->
                     <!-- Single Trending Post -->
+                @foreach ($artikel as $a)
                     <div class="single-trending-post">
-                        <img src="frontend/mag/img/bg-img/20.jpg" alt="">
+                        <img src="{{ asset('assets/img/artikel/'.$a->foto)}}" alt="">
                         <div class="post-content">
-                            <a href="#" class="post-cata">TV Show</a>
-                            <a href="video-post.html" class="post-title">A Guide To Rocky Mountain Vacations</a>
+                            <a href="#" class="post-cata">{{ $a->kategori->nama_kategori }}</a>
+                            <a href="video-post.html" class="post-title">{{ $a->judul }}</a>
                         </div>
+                    </div>
+
+                    <!-- Single Trending Post -->
                     </div>
 
 
                 </div>
-            </div>
+            </div>@endforeach
 
             <!-- Feature Video Posts Area -->
 
@@ -246,34 +250,6 @@
         <!-- >>>>>>>>>>>>>>>>>>>>
          Post Right Sidebar Area
         <<<<<<<<<<<<<<<<<<<<< -->
-        <div class="post-sidebar-area right-sidebar mt-30 mb-30 box-shadow">
-            <!-- Sidebar Widget -->
-            <div class="single-sidebar-widget p-30">
-                <!-- Social Followers Info -->
-                <div class="social-followers-info">
-                    <!-- Facebook -->
-                    <a href="#" class="facebook-fans"><i class="fa fa-facebook"></i><span>Facebook</span></a>
-                    <!-- Twitter -->
-                     <!-- YouTube -->
-                    </div>
-            </div>
-
-            <!-- Sidebar Widget -->
-
-
-            <!-- Sidebar Widget -->
-            <div class="single-sidebar-widget">
-                <a href="#" class="add-img"><img src="frontend/mag/img/bg-img/add2.png" alt=""></a>
-            </div>
-
-            <!-- Sidebar Widget -->
-            <div class="single-sidebar-widget p-30">
-                <!-- Section Title -->
-
-
-            </div>
-
-            </div>
 
             <!-- Sidebar Widget -->
 

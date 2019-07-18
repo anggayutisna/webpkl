@@ -36,6 +36,10 @@
         <textarea id="editorl" rows="8" cols="30" type="text" name="konten"></textarea>
     </div>
     <div class="form-group">
+        <label for="">Map</label>
+        <input class="form-control" type="text" name="map">
+    </div>
+    <div class="form-group">
         <label for="">Foto</label>
         <input type="file" class="form-control" name="foto">
     </div>

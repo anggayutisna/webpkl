@@ -44,19 +44,20 @@
 
                 <div class="col-12 col-xl-8">
                     <div class="post-details-content bg-white mb-30 p-30 box-shadow">
-                        <div class="blog-thumb mb-30">
-                            <img src="{{ asset('assets/img/artikel/'.$artikels->foto)}}"  alt="">
-                        </div>
                         <div class="blog-content">
                             <div class="post-meta">
                                 <a href="#">{{  date('l, d-m-Y')}}</a>
                                 <a href="#">{{ $artikels->kategori->nama_kategori}}</a>
                             </div>
                             <h4 class="post-title">{{ $artikels->judul }}</h4>
+                                                    <div class="blog-thumb mb-30">
+                            <img src="{{ asset('assets/img/artikel/'.$artikels->foto)}}"  alt="">
+                        </div>
                             <!-- Post Meta -->
 
 
                             <p>{!! $artikels->konten !!}</p><br>
+                           <iframe src="{{ $artikels->map }}" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
  @endforeach
                            <a href=""> @foreach ($artikel as $tags){{ $tags->nama_tag }} @endforeach</a>
