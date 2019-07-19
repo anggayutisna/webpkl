@@ -33,7 +33,7 @@
     </div>
      <div class="form-group">
         <label>Map</label>
-        <input class="form-control" value="{{ $artikel->judul }}" type="text" name="map" disabled>{{ $artikel->map }}</input>
+        <input class="form-control" value="{{ $artikel->map }}" type="text" name="map" disabled>
     </div>
     <div class="form-group">
         <label for="">Foto</label><br>

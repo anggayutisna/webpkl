@@ -337,44 +337,6 @@
     <script src="frontend/mag/js/plugins/plugins.js"></script>
     <!-- Active js -->
     <script src="frontend/mag/js/active.js"></script>
-    @push('script')
-   <script>
-         // Get List Menu
-
-
-    // Get List Article
-
-    var alamat ='/api/json'
-            $.ajax({
-                  url : alamat,
-                  method : 'GET'
-                  datatype : 'json',
-                  success:function(berhasil){
-                       $.each(berhasil.data,function(key,value){
-                       $("#omaewa-mo-shinderu").append(
-                         `
-                          <div class="post-thumbnail">
-                        <img src="assets/img/artikel/${value.foto}" alt="">
-                    </div>
-                    <div class="post-content">
-                        <a href="single-post.html" class="post-title">${value.judul}</a>
-                        <div class="post-meta d-flex justify-content-between">
-                            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
-                            <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</a>
-                            <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                        </div>
-                    </div>
-                        `
-                        )
-               })
-          },
-         error:function (gagal){
-         console.log(gagal)
-      }
-})
-
-     </script>
-@endpush
 </body>
 
 </html>

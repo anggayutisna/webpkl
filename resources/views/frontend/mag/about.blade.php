@@ -56,7 +56,7 @@
                             <div class="team-member-thumbnail">
                                 <img src="frontend/mag/img/bg-img/36.jpg" alt="">
                                 <div class="social-btn">
-                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    <a href="https://web.facebook.com/angga.nakspk"><i class="fa fa-facebook" aria-hidden="true"></i></a>
 
                                 </div>
                             </div>

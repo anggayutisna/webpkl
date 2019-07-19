@@ -5,7 +5,7 @@
 
 @section('js')
     <script src="{{ asset('js/select2.min.js')}}"></script>
-    <script src="{{ asset('backend/assest/js/components/select2-init.js')}}"></script>
+    <script src="{{ asset('backend/assets/js/components/select2-init.js')}}"></script>
     <script src="{{ asset('backend/assets/vendor/ckeditor/ckeditor.js')}}"></script>
 <script>
     CKEDITOR.replace('editorl');

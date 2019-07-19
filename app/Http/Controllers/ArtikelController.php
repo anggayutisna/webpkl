@@ -102,7 +102,7 @@ class ArtikelController extends Controller
     {
         $artikel = Artikel::findOrFail($id);
         $kategori = Kategori::all();
-        $tag = tag::all();
+        $tag = Tag::all();
         $selected = $artikel->tag->pluck('id')->toArray();
         return view('admin.artikel.edit', compact('artikel', 'selected', 'kategori', 'tag'));
     }
@@ -122,7 +122,6 @@ class ArtikelController extends Controller
         //     'foto' => 'required|mimes:jpeg.jpg.png.gif|required|max:2048',
         //     'kategori_id' => 'required',
         //     'tag_id' => 'required']);
-
         $artikel = Artikel::findOrFail($id);
         $artikel->judul = $request->judul;
         $artikel->slug = str_slug($request->judul);

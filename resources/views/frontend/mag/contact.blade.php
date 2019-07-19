@@ -97,7 +97,7 @@
                             <!-- Social Followers Info -->
                             <div class="social-followers-info">
                                 <!-- Facebook -->
-                                <a href="#" class="facebook-fans"><i class="fa fa-facebook"></i><span>Facebook</span></a>
+                                <a href="https://web.facebook.com/angga.nakspk" class="facebook-fans"><i class="fa fa-facebook"></i><span>Facebook</span></a>
                                 <!-- Twitter -->
                                </div>
                         </div>
