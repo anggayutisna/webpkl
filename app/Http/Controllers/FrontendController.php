@@ -25,7 +25,7 @@ class FrontendController extends Controller
         if ($cari) {
             $artikel = Artikel::where('judul', 'LIKE', "%$cari%")->paginate(4);
         }
-        return view('frontend.mag.allblog', compact('artikel'));
+        return view('frontend.mag.index', compact('artikel'));
     }
 
     public function blogall(Artikel $artikel)
