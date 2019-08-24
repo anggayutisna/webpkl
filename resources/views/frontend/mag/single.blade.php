@@ -37,7 +37,7 @@
     <!-- ##### Post Details Area Start ##### -->
     <section class="post-details-area">
         <div class="container">
-            <div class="row justify-content-center">
+            <div class="row justify-content-left">
                 <!-- Post Details Content Area -->
 
                 @foreach ($artikel as $artikels)
@@ -57,9 +57,9 @@
 
 
                             <p>{!! $artikels->konten !!}</p><br>
-                           <iframe src="{{ $artikels->map }}" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                          <iframe src="{{ $artikels->map }}" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 
- @endforeach
+                            @endforeach
                            <a href=""> @foreach ($artikel as $tags){{ $tags->nama_tag }} @endforeach</a>
 
 

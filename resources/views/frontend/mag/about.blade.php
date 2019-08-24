@@ -43,8 +43,8 @@
                         <div class="section-heading">
                             <h5>About Us</h5>
                         </div>
-                        <p>defgv</p>
-                        <img class="mt-15" src="frontend/mag/img/bg-img/35.jpg" alt="">
+                        <p>Untuk memulai sebuah usaha diperlukan kerja keras dan kerja sama yang efektif untuk membangun sebuah perusahaan atau organisasi untuk memulai karir. maka dari itu kami berusaha untuk mencapai tujuan tersebut dengan membentuk sebuah tim</p>
+                        <img class="mt-15" src="frontend/mag/img/jjd.jpg" alt="">
 
                         <!-- Team Member Area -->
                         <div class="section-heading mt-30">
@@ -54,16 +54,16 @@
                         <!-- Single Team Member -->
                         <div class="single-team-member d-flex align-items-center">
                             <div class="team-member-thumbnail">
-                                <img src="frontend/mag/img/bg-img/36.jpg" alt="">
+                                <img src="frontend/mag/img/my.jpg" alt="">
                                 <div class="social-btn">
                                     <a href="https://web.facebook.com/angga.nakspk"><i class="fa fa-facebook" aria-hidden="true"></i></a>
 
                                 </div>
                             </div>
                             <div class="team-member-content">
-                                <h6>Mrs. Susan Monroe</h6>
+                                <h6>Angga Yustina</h6>
                                 <span>Reporter</span>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consectetur mauris id scelerisque eleifend. Nunc vestibulum cursea quam at scelerisque.</p>
+                                <p>No time to sit, i must do what i do before !</p>
                             </div>
                         </div>
 
@@ -113,24 +113,12 @@
                             <!-- Social Followers Info -->
                             <div class="social-followers-info">
                                 <!-- Facebook -->
-                                <a href="#" class="facebook-fans"><i class="fa fa-facebook"></i> <span>Facebook</span></a>
+                                <a href="https://web.facebook.com/angga.nakspk" class="facebook-fans"><i class="fa fa-facebook"></i> <span>Facebook</span></a>
                                 <!-- Twitter -->
                                 </div>
                         </div>
 
                         <!-- Sidebar Widget -->
-                        <div class="single-sidebar-widget p-30">
-                            <!-- Section Title -->
-
-
-                        <!-- Sidebar Widget -->
-                        <div class="single-sidebar-widget">
-                            <a href="#" class="add-img"><img src="frontend/mag/img/bg-img/add2.png" alt=""></a>
-                        </div>
-
-                        <!-- Sidebar Widget -->
-                        <div class="single-sidebar-widget p-30">
-                            <!-- Section Title -->
 
 
                         </div>

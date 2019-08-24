@@ -116,12 +116,6 @@ class ArtikelController extends Controller
      */
     public function update(Request $request, $id)
     {
-        // $request->validate([
-        //     'judul' => 'required|unique:artikels',
-        //     'konten' => 'required|min:50',
-        //     'foto' => 'required|mimes:jpeg.jpg.png.gif|required|max:2048',
-        //     'kategori_id' => 'required',
-        //     'tag_id' => 'required']);
         $artikel = Artikel::findOrFail($id);
         $artikel->judul = $request->judul;
         $artikel->slug = str_slug($request->judul);

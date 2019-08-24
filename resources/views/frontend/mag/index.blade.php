@@ -152,6 +152,7 @@
         <!-- >>>>>>>>>>>>>>>>>>>>
          Post Left Sidebar Area
         <<<<<<<<<<<<<<<<<<<<< -->
+
         <div class="post-sidebar-area left-sidebar mt-30 mb-30 bg-white box-shadow">
             <!-- Sidebar Widget -->
             <div class="single-sidebar-widget p-30">
@@ -177,21 +178,9 @@
                         <a href="{{ route('blogall.blog', $artikels->slug) }}" class="post-title">{{ $artikels->judul }}</a>
 
                     </div>
-                </div>
-
-@endforeach
+                </div>@endforeach
 
             </div>
-
-            <!-- Sidebar Widget -->
-            <div class="single-sidebar-widget">
-                <a href="#" class="add-img"><img src="frontend/mag/img/bg-img/add.png" alt=""></a>
-            </div>
-
-            <!-- Sidebar Widget -->
-            <div class="single-sidebar-widget p-30">
-                <!-- Section Title -->
-
 
 
             </div>
@@ -209,49 +198,20 @@
                 </div>
 
                 <div class="trending-post-slides owl-carousel">
-                    <!-- Single Trending Post -->
-                    <!-- Single Trending Post -->
                 @foreach ($artikel as $a)
                     <div class="single-trending-post">
                         <img src="{{ asset('assets/img/artikel/'.$a->foto)}}" alt="">
                         <div class="post-content">
-                            <a href="#" class="post-cata">{{ $a->kategori->nama_kategori }}</a>
-                            <a href="video-post.html" class="post-title">{{ $a->judul }}</a>
-                        </div>
-                    </div>
-
-                    <!-- Single Trending Post -->
-                    </div>
-
+                            <a href="{{ route('cat.blog', $a->kategori->slug) }}" class="post-cata">{{ $a->kategori->nama_kategori }}</a>
+                            <a href="{{ route('blogall.blog', $a->slug) }}" class="post-title">{{ $a->judul }}</a>
 
                 </div>
             </div>@endforeach
 
-            <!-- Feature Video Posts Area -->
-
-
-
-            <!-- Sports Videos -->
-            <div class="sports-videos-area">
-                <!-- Section Title -->
-
-
-                <div class="sports-videos-slides owl-carousel mb-30">
-                    <!-- Single Featured Post -->
-
-                        </div>
-                    </div>
-
-
-
+                </div>
             </div>
         </div>
 
-        <!-- >>>>>>>>>>>>>>>>>>>>
-         Post Right Sidebar Area
-        <<<<<<<<<<<<<<<<<<<<< -->
-
-            <!-- Sidebar Widget -->
 
     </section>
     <!-- ##### Mag Posts Area End ##### -->

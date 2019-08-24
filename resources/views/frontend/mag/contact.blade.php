@@ -102,20 +102,6 @@
                                </div>
                         </div>
 
-                        <!-- Sidebar Widget -->
-                        <div class="single-sidebar-widget p-30">
-                            <!-- Section Title -->
-
-
-                        <!-- Sidebar Widget -->
-                        <div class="single-sidebar-widget">
-                            <a href="#" class="add-img"><img src="frontend/mag/img/bg-img/add2.png" alt=""></a>
-                        </div>
-
-                        <!-- Sidebar Widget -->
-                        <div class="single-sidebar-widget p-30">
-                            <!-- Section Title -->
-
 
                         </div>
                     </div>
