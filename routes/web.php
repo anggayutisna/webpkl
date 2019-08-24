@@ -52,9 +52,6 @@ Route::group(['prefix' => '/'], function () {
     Route::get('/about', function () {
         return view('frontend.mag.about');
     });
-    Route::get('/detail', function () {
-        return view('frontend.mag.detail');
-    });
     Route::get('/blogpariwisata', function () {
         $artikel = Artikel::all();
         return view('frontend.mag.allblog', compact('artikel'));

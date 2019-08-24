@@ -51,7 +51,7 @@
                             <div class="post-content">
                                 <div class="post-meta">
                                     <a> {{  date('l, d-m-Y')}}  </a>
-                                    <a href="archive.html">{{ $artikels->kategori->nama_kategori}}</a>
+                                    <a href="{{ route('cat.blog', $artikels->kategori->slug) }}">{{ $artikels->kategori->nama_kategori}}</a>
                                 </div>
                                 <a href="{{ route('blogall.blog', $artikels->slug) }}" class="post-title">{{ $artikels->judul }}</a>
                                 <!-- Post Meta -->
