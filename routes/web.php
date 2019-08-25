@@ -56,6 +56,10 @@ Route::group(['prefix' => '/'], function () {
         $artikel = Artikel::all();
         return view('frontend.mag.allblog', compact('artikel'));
     });
+    Route::get('/kategori', function () {
+        $artikel = Artikel::all();
+        return view('frontend.mag.kategori', compact('artikel'));
+    });
 
     Route::get('/', 'FrontendController@allblog')->name('all.blog');
     Route::get('/{artikel}', 'FrontendController@blogall')->name('blogall.blog');

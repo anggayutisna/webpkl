@@ -60,7 +60,7 @@
                           <iframe src="{{ $artikels->map }}" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 
                             @endforeach
-                           <a href=""> @foreach ($artikel as $tags){{ $tags->nama_tag }} @endforeach</a>
+                             @foreach ($artikel->tag as $tags) <a href="">{{ $tags->nama_tag }}</a> @endforeach
 
 
 

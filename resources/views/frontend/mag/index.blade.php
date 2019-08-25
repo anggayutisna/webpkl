@@ -96,7 +96,6 @@
                         <div class="post-content text-center">
                             <div class="post-meta" data-animation="fadeInUp" data-delay="100ms">
                                 <a href="#">{{ date('l, d-m-Y')}}</a>
-                                <a href="archive.html">travel</a>
                             </div>
                             <a href="video-post.html" class="post-title" data-animation="fadeInUp" data-delay="300ms">Nikmati keindahan alam nusantara</a>
 
@@ -115,7 +114,6 @@
                         <div class="post-content text-center">
                             <div class="post-meta" data-animation="fadeInUp" data-delay="100ms">
                                 <a href="#">{{ date('l, d-m-Y')}}</a>
-                                <a href="archive.html">travel</a>
                             </div>
                             <a href="video-post.html" class="post-title" data-animation="fadeInUp" data-delay="300ms">Kunjungi tempat wisata terbaik</a>
 
@@ -134,7 +132,6 @@
                         <div class="post-content text-center">
                             <div class="post-meta" data-animation="fadeInUp" data-delay="100ms">
                                 <a href="#">{{ date('l, d-m-Y')}}</a>
-                                <a href="archive.html">travel</a>
                             </div>
                             <a href="video-post.html" class="post-title" data-animation="fadeInUp" data-delay="300ms">Isi liburan dengan berpariwisata di indonesia</a>
 
@@ -162,12 +159,6 @@
                 </div>
 
                 <!-- Single Blog Post -->
-                <div class="single-blog-post d-flex">
-                    <ul id="omaewa-mo-shinderu"></ul>
-
-                </div>
-
-                <!-- Single Blog Post -->
               @foreach ($artikel as $artikels)
                 <!-- Single Blog Post -->
                 <div class="single-blog-post d-flex">
@@ -181,6 +172,9 @@
                 </div>@endforeach
 
             </div>
+
+                <img src="frontend/mag/img/indonesian.png" alt="">
+
 
 
             </div>
@@ -208,9 +202,107 @@
                 </div>
             </div>@endforeach
 
+
+                </div>
+            </div>
+            <div class="feature-video-posts mb-30">
+                <!-- Section Title -->
+                <div class="section-heading">
+                    <h5>Bali Is Most Touris</h5>
+                </div>
+
+                <div class="featured-video-posts">
+                    <div class="row">
+                        <div class="col-12 col-lg-7">
+                            <!-- Single Featured Post -->
+                            <div class="single-featured-post">
+                                <!-- Thumbnail -->
+                                <div class="post-thumbnail mb-50">
+                                    <img src="frontend/mag/img/bali.jpg" alt="">
+                                    <a href="https://www.youtube.com/watch?v=2b9txcAt4e0" class="video-play"><i class="fa fa-play"></i></a>
+                                </div>
+                                <!-- Post Contetnt -->
+                                <div class="post-content">
+                                    <div class="post-meta">
+                                        <a href="#">{{ date('l, d-m-Y')}}</a>
+                                    </div>
+                                    <a href="https://www.youtube.com/watch?v=2b9txcAt4e0" class="post-title">Bali tempat paling banyak dikunjungi oleh touris</a>
+                                    <p>DeskripsiBali adalah sebuah pulau di Indonesia yang dikenal karena memiliki pegunungan berapi yang hijau, terasering sawah yang unik, pantai, dan terumbu karang yang cantik.</p>
+                                </div>
+                                <!-- Post Share Area -->
+
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-5">
+                            <!-- Featured Video Posts Slide -->
+                            <div class="featured-video-posts-slide owl-carousel">
+
+                                 @foreach ($artikel as $a)
+
+                                    <!-- Single Blog Post -->
+
+
+                                    <div class="single-blog-post d-flex style-3">
+                                        <div class="post-thumbnail">
+                                            <img src="{{ asset('assets/img/artikel/'.$a->foto)}}" alt="">
+                                        </div>
+                                        <div class="post-content">
+                                            <a href="{{ route('blogall.blog', $a->slug) }}" class="post-title">{{ $a->judul }}</a>
+
+                                        </div>
+                                    </div>
+                                @endforeach
+
+
+                            </div>
+                            <br>
+                            <center><h3><a href={{ url('about') }}"">About Us</a></h3></center>
+                            Untuk memulai sebuah usaha diperlukan kerja keras dan kerja sama yang efektif untuk membangun sebuah perusahaan atau organisasi untuk memulai karir. maka dari itu kami berusaha untuk mencapai tujuan tersebut dengan membentuk sebuah tim
+                       <div class="social-followers-info"><br>
+                        <center><a href="{{ url('about') }}" class="facebook-fans"><span>Detail About Us</span></a>
+                    </center>
+                       </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+         <div class="post-sidebar-area right-sidebar mt-30 mb-30 box-shadow">
+            <!-- Sidebar Widget -->
+            <div class="single-sidebar-widget p-30">
+                <!-- Social Followers Info -->
+                <div class="section-heading">
+                    <h5>Sosial media</h5>
+                </div>
+                <div class="social-followers-info">
+                    <!-- Facebook -->
+                    <a href="https://web.facebook.com/angga.nakspk" class="facebook-fans"><i class="fa fa-facebook"></i><span>Facebook</span></a>
+                    <a href="https://instagram.com/_angga_s21_" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
+
+                </div>
+            </div>
+             <div class="single-sidebar-widget p-30">
+                <!-- Section Title -->
+                <div class="section-heading">
+                    <h5>Kategori</h5>
+                </div>
+
+                <!-- Catagory Widget -->
+                @foreach ($artikel as $ar)
+                <ul class="catagory-widgets">
+                    <a href="{{ route('cat.blog', $ar->kategori->slug) }}"><span><i class="fa fa-angle-double-right" aria-hidden="true"></i>{{ $ar->kategori->nama_kategori }}</span></a>
+                </ul>
+                @endforeach
+            </div>
+             <img src="frontend/mag/img/indonesian.png" alt="">
+
+         </div>
+
+
+                        </div>
+                    </div>
+
 
 
     </section>

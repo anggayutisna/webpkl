@@ -57,6 +57,7 @@
                                 <!-- Post Meta -->
 
                                 <p>  {!! substr($artikels->konten, 0,200) !!}</p>
+
                             </div>
                     </div>@endforeach
                     </div>
@@ -69,10 +70,17 @@
                             <!-- Social Followers Info -->
                             <div class="social-followers-info">
                                 <!-- Facebook -->
-                                <a href="https://web.facebook.com/angga.nakspk" class="facebook-fans"><i class="fa fa-facebook"></i> <span>Facebook</span></a>
-                                <!-- Twitter -->
-                                </div>
-                        </div>
+                    <a href="https://web.facebook.com/angga.nakspk" class="facebook-fans"><i class="fa fa-facebook"></i><span>Facebook</span></a>
+                    <a href="https://instagram.com/_angga_s21_" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
+
+                </div>
+            </div>
+             <img src="frontend/mag/img/indonesian.png" alt="">
+
+         </div>
+
+        </div>
+
 
                         <!-- Sidebar Widget -->
 
