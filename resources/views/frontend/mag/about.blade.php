@@ -58,8 +58,9 @@
                                 <div class="social-btn">
                                     <a href="https://web.facebook.com/angga.nakspk"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                                      <a href="https://instagram.com/_angga_s21_" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
-                                </div>
-                                <img src="frontend/mag/img/indonesian.png" alt="">
+                                    <img src="frontend/mag/img/indonesian.png" alt="">
+                                    </div>
+
                             </div>
                             <div class="team-member-content">
                                 <h6>Angga Yustina</h6>
